@@ -89,14 +89,17 @@ export default function JourneyPreview() {
                   <p className="text-sm text-muted-foreground leading-relaxed mt-1.5">
                     {node?.description}
                   </p>
-                  {node?.relatedProject && (
-                    <Link
-                      href={`/project-detail?slug=${node?.relatedProjectSlug}`}
-                      className="inline-flex items-center gap-1.5 mt-2 text-xs font-mono-code text-primary hover:text-primary/80 transition-colors"
-                    >
-                      → {node?.relatedProject}
-                    </Link>
-                  )}
+                  {node.relatedLink && (
+  <a
+    href={node.relatedLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-1.5 mt-2 text-xs font-mono text-primary hover:text-primary/80 transition-colors"
+  >
+    <span>→</span>
+    {node.relatedProject}
+  </a>
+)}
                 </div>
               </div>
             ))}
@@ -109,7 +112,7 @@ export default function JourneyPreview() {
                 </div>
               </div>
               <div className="flex-1 pt-1.5">
-                <span className="font-mono-code text-xs text-muted-foreground/40 tracking-wider">2026 →</span>
+                <span className="font-mono-code text-xs text-muted-foreground/40 tracking-wider">2027 →</span>
                 <h3 className="text-base font-bold text-muted-foreground/40 mt-1">The Next Chapter</h3>
                 <p className="text-sm text-muted-foreground/30 mt-1">Still writing...</p>
               </div>
