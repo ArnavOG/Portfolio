@@ -46,7 +46,7 @@ export default function Header() {
               className="transition-transform duration-300 group-hover:scale-110"
             />
             <span className="font-sans font-800 text-base tracking-tight text-foreground">
-              arnav
+              Arnav
               <span className="text-primary">.</span>
             </span>
           </Link>

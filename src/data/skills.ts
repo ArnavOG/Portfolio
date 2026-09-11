@@ -8,31 +8,21 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'Languages',
     variant: 'primary',
-    skills: ['C#', 'Python', 'JavaScript', 'TypeScript', 'Java', 'C++', 'HTML', 'CSS'],
+    skills: ['C#', 'JavaScript', 'Java', 'HTML', 'CSS'],
   },
   {
-    category: 'Web',
+    category: 'Tools',
     variant: 'accent',
-    skills: ['React', 'Next.js', 'Tailwind CSS', 'Node.js', 'REST APIs', 'Canvas API'],
+    skills: ['Git', 'Github', 'VS Code', 'Jetbrains Rider', 'ChatGPT'],
   },
   {
     category: 'Frameworks & Platforms',
     variant: 'secondary',
-    skills: ['.NET', 'WPF', 'FastAPI', 'Vite', 'Vercel'],
-  },
-  {
-    category: 'Tools',
-    variant: 'default',
-    skills: ['Git', 'GitHub', 'VS Code', 'Visual Studio', 'Figma', 'Postman', 'Linux'],
-  },
-  {
-    category: 'Databases',
-    variant: 'default',
-    skills: ['SQLite', 'PostgreSQL', 'Supabase', 'IndexedDB'],
+    skills: ['.NET', 'MySQL'],
   },
   {
     category: 'Currently Learning',
     variant: 'primary',
-    skills: ['Rust', 'Docker', 'System Design', 'Computer Networks', 'OS Internals'],
+    skills: ['Computer Networks', 'OS Internals'],
   },
 ];

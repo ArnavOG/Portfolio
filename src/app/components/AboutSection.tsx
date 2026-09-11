@@ -4,27 +4,27 @@ import React, { useEffect, useRef } from 'react';
 
 const infoCards = [
   {
-    label: 'Education',
-    value: 'B.E. Computer Science',
-    sub: 'Graduating 2026',
+    label: 'EDUCATION',
+    value: 'Diploma in Computer Science',
+    sub: '3rd Year · 5th Semester',
     color: 'yellow',
   },
   {
-    label: 'Interests',
-    value: 'Systems · Web · AI/ML',
-    sub: 'Always expanding',
+    label: 'BUILDING',
+    value: 'Web · Software · AI',
+    sub: 'Learning by building',
     color: 'purple',
   },
   {
-    label: 'Exploring',
-    value: 'Rust · Open Source',
-    sub: 'Currently deep in',
+    label: 'CREATIVE',
+    value: 'YouTube · Minecraft · Storytelling',
+    sub: 'Building ArnavoltZ',
     color: 'blue',
   },
   {
-    label: 'Direction',
-    value: 'Build → Ship → Found',
-    sub: 'The plan',
+    label: 'DIRECTION',
+    value: 'Build → Ship → Learn',
+    sub: 'Becoming a better builder',
     color: 'yellow',
   },
 ];
@@ -54,13 +54,13 @@ export default function AboutSection() {
   const colorMap: Record<string, string> = {
     yellow: 'border-primary/20 hover:border-primary/50',
     purple: 'border-secondary/20 hover:border-secondary/50',
-    blue: 'border-accent/20 hover:border-accent/50',
+    blue: 'border-accent/20 hover:border-accent/50'
   };
 
   const labelColorMap: Record<string, string> = {
     yellow: 'text-primary',
     purple: 'text-secondary',
-    blue: 'text-accent',
+    blue: 'text-accent'
   };
 
   return (
@@ -79,19 +79,19 @@ export default function AboutSection() {
 
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p className="text-base md:text-lg">
-                I&apos;m a Computer Science student who builds things — not just to complete assignments, but because I genuinely want to understand how software works at every layer.
+                I&apos;m Arnav... a Computer Science student, developer, and creator who likes turning ideas into things people can actually use.
               </p>
               <p className="text-base">
-                I started coding through Minecraft modding, fell in love with the craft, and haven&apos;t stopped since. My projects range from desktop applications in C# to browser-based tools, AI experiments, and the occasional CSS art piece at midnight.
+                I started coding through Minecraft modding, fell in love with the craft, and haven&apos;t stopped since. My projects range from console applications in C# to browser-based tools, AI experiments, and the occasional CSS art piece at midnight.
               </p>
               <p className="text-base">
-                I also make YouTube videos about what I&apos;m building and learning. Teaching forces clarity — if I can&apos;t explain it, I don&apos;t really understand it.
+                I also create content around gaming, experimentation and storytelling. Creating videos has taught me something coding alone couldn't — how to turn an idea into an experience for another person.
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3 pt-2">
               <a
-                href="https://github.com"
+                href="https://github.com/ArnavOG"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border text-sm font-semibold text-foreground hover:border-primary/40 hover:text-primary transition-all duration-200"
@@ -99,7 +99,7 @@ export default function AboutSection() {
                 GitHub ↗
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/arnavin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-border text-sm font-semibold text-muted-foreground hover:text-foreground transition-all duration-200"
