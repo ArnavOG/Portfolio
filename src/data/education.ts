@@ -41,6 +41,9 @@ export const education: EducationItem[] = [
       'Mathematics',
       'Science',
       'Computer',
+      'Hindi',
+      'Social Science',
+      'English'
     ],
   },
 ];

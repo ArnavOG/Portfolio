@@ -13,7 +13,7 @@ export const timelineNodes: TimelineNode[] = [
   {
     id: '01',
     period: '2022',
-    title: 'Computer Science Begins',
+    title: 'The Beginning',
     description: 'Started my formal journey into Computer Science. In 9th standard, I chose Computer Science as the Extra subject and I got introduced to the Computers History, fundamentals and OS and the Intro of Programming went from something interesting to something I wanted to understand properly.',
     type: 'past',
   },
