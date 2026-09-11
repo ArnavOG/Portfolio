@@ -13,7 +13,7 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'Tools',
     variant: 'accent',
-    skills: ['Git', 'Github', 'VS Code', 'Jetbrains Rider', 'ChatGPT'],
+    skills: ['Git', 'GitHub', 'VS Code', 'JetBrains Rider', 'ChatGPT'],
   },
   {
     category: 'Frameworks & Databases',
