@@ -54,7 +54,7 @@ export default function CreatorSection() {
             <span className="gradient-text-yellow">Side</span>
           </h2>
           <p className="text-muted-foreground text-base mt-4 max-w-lg">
-            Building software is what I do. But creating, gaming, and sharing are why I keep doing it.
+            Building software is what I do. But creating, gaming, sketching, vibing and sharing them are why I keep doing it.
           </p>
         </div>
 
