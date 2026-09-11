@@ -18,11 +18,11 @@ export const skillGroups: SkillGroup[] = [
   {
     category: 'Frameworks & Databases',
     variant: 'secondary',
-    skills: ['.NET', 'MySQL'],
+    skills: ['.NET', 'MySQL', 'Relational Databases'],
   },
   {
     category: 'Currently Learning',
     variant: 'primary',
-    skills: ['Computer Networks', 'OS Internals'],
+    skills: ['Computer Networks', 'OS Internals', 'MVC'],
   },
 ];
