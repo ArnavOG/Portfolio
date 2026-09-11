@@ -11,14 +11,14 @@ const infoCards = [
   },
   {
     label: 'BUILDING',
-    value: 'Web · Software · AI',
+    value: 'Web · Software · Layouts',
     sub: 'Learning by building',
     color: 'purple',
   },
   {
     label: 'CREATIVE',
-    value: 'YouTube · Minecraft · Storytelling',
-    sub: 'Building ArnavoltZ',
+    value: 'Sketching · Music · Storytelling',
+    sub: 'Building New Ideas',
     color: 'blue',
   },
   {
@@ -82,7 +82,7 @@ export default function AboutSection() {
                 I&apos;m Arnav... a Computer Science student, developer, and creator who likes turning ideas into things people can actually use.
               </p>
               <p className="text-base">
-                I started coding through Minecraft modding, fell in love with the craft, and haven&apos;t stopped since. My projects range from console applications in C# to browser-based tools, AI experiments, and the occasional CSS art piece at midnight.
+                My projects range from console applications in C# to browser-based tools, AI experiments, and the occasional CSS art piece at midnight.
               </p>
               <p className="text-base">
                 I also create content around gaming, experimentation and storytelling. Creating videos has taught me something coding alone couldn't — how to turn an idea into an experience for another person.

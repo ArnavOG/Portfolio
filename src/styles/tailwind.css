@@ -72,16 +72,37 @@
   }
 
   .monolith-bg-text {
-    font-size: clamp(6rem, 25vw, 28rem);
-    line-height: 0.75;
-    letter-spacing: -0.06em;
-    font-weight: 900;
-    text-transform: uppercase;
-    opacity: 0.025;
-    pointer-events: none;
-    user-select: none;
-    white-space: nowrap;
-  }
+  font-size: clamp(6rem, 25vw, 28rem);
+  line-height: 0.75;
+  letter-spacing: -0.06em;
+  font-weight: 900;
+  text-transform: uppercase;
+  opacity: 0.025;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Only brighten the outer portions */
+.monolith-edge-text {
+  opacity: 0.015;
+
+  mask-image: radial-gradient(
+    ellipse 42% 58% at 50% 50%,
+    transparent 0%,
+    transparent 55%,
+    black 75%,
+    black 100%
+  );
+
+  -webkit-mask-image: radial-gradient(
+    ellipse 42% 58% at 50% 50%,
+    transparent 0%,
+    transparent 55%,
+    black 75%,
+    black 100%
+  );
+}
 
   .reveal {
     opacity: 0;

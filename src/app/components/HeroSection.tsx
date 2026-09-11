@@ -59,16 +59,37 @@ export default function HeroSection() {
         />
       </div>
 
+      <img
+        src="/assets/images/arnav.png"
+        alt="Arnav"
+        className="
+        absolute left-1/2 top-[27%]
+        -translate-x-1/2
+        z-10 h-[500px] w-auto object-contain
+        brightness-[0.45] contrast-[0.90] 
+        [mask-image:radial-gradient(ellipse_55%_52%_at_51%_50%,black_60%,transparent_100%)]
+        [-webkit-mask-image:radial-gradient(ellipse_48%_52%_at_50%_42%,black_60%,transparent_100%)]
+        "
+/>
+
       {/* Monolith background text */}
-      <div
-        className="monolith-bg-text absolute top-1/2 left-1/2 text-foreground select-none pointer-events-none"
-        style={{ transform: 'translate(-50%, -50%)' }}
-      >
-        ARNAV
-      </div>
+<div
+  className="monolith-bg-text absolute top-1/2 left-1/2 text-foreground select-none pointer-events-none"
+  style={{ transform: 'translate(-50%, -50%)' }}
+>
+  ARNAV
+</div>
+
+{/* Brighter outer edges */}
+<div
+  className="monolith-bg-text monolith-edge-text absolute top-1/2 left-1/2 text-foreground select-none pointer-events-none"
+  style={{ transform: 'translate(-50%, -50%)' }}
+>
+  ARNAV
+</div>
 
       {/* Hero content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto space-y-10">
+      <div className="relative z-0 text-center px-6 max-w-5xl mx-auto space-y-10">
         {/* Status badge */}
         <div className="reveal active inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5">
           <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />

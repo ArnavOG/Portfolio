@@ -22,7 +22,7 @@ export default function VisionSection() {
     return () => observer?.disconnect();
   }, []);
 
-  const themes = ['Learning', 'Building', 'Shipping', 'Founding'];
+  const themes = ['Learning', 'Building', 'Experimenting', 'Founding'];
 
   return (
     <section ref={sectionRef} className="py-24 px-6 bg-card/30">
@@ -37,10 +37,9 @@ export default function VisionSection() {
 
         <div className="reveal reveal-delay-1">
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-            I want to build software that solves real problems — not demos, not portfolio pieces for their own sake,
-            but things that people actually use and that make their work or life meaningfully better.
-            The path I see is: keep learning deeply, keep shipping consistently, find a problem worth years of focus,
-            and build a company around solving it.
+            I don't want to spend my life just writing code for the sake of writing code. I want to build things that people actually use... things that solve real problems and make life a little better.
+
+            For now, I'm learning, building, experimenting, and trying to understand what problems are actually worth dedicating years to. One day, I want to take everything I learn and build something bigger around solving one of them.
           </p>
         </div>
 
