@@ -16,7 +16,7 @@ export const skillGroups: SkillGroup[] = [
     skills: ['Git', 'Github', 'VS Code', 'Jetbrains Rider', 'ChatGPT'],
   },
   {
-    category: 'Frameworks & Platforms',
+    category: 'Frameworks & Databases',
     variant: 'secondary',
     skills: ['.NET', 'MySQL'],
   },
