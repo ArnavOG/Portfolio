@@ -11,10 +11,9 @@ export const learningCards: LearningCard[] = [
     title: 'Currently Learning',
     color: 'yellow',
     items: [
-      'Rust — ownership model and systems programming',
-      'Computer Networks — TCP/IP deep dive',
+      'Computer Networks — TCP/IP',
       'OS Internals — how kernels actually work',
-      'Docker & containerization basics',
+      'ASP .NET Core - MVC',
     ],
   },
   {
@@ -22,8 +21,7 @@ export const learningCards: LearningCard[] = [
     title: 'Currently Building',
     color: 'purple',
     items: [
-      'NeuralSketch — sketch-to-image AI experiment',
-      'StudySync v2 — collaborative study platform',
+      'Student Management System - Files in Process',
       'This portfolio — always iterating',
     ],
   },
@@ -32,10 +30,10 @@ export const learningCards: LearningCard[] = [
     title: 'Currently Exploring',
     color: 'blue',
     items: [
-      'Open source contributions',
-      'System design patterns',
-      'Developer content creation',
-      'The indie hacker / builder space',
+      'AI-assisted development',
+      'Software architecture & project structure',
+      'Creative coding & experimentation',
+      'Content creation & storytelling',
     ],
   },
 ];

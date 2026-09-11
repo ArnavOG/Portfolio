@@ -18,10 +18,10 @@ export interface ExperienceItem {
 
 export const education: EducationItem[] = [
   {
-    institution: 'Government College of Engineering',
-    degree: 'Bachelor of Engineering',
+    institution: 'Government Polytechnic Sikandra, Kanpur Dehat',
+    degree: 'Diploma',
     field: 'Computer Science & Engineering',
-    period: '2022 – 2026',
+    period: '2024 – 2027',
     status: 'ongoing',
     details: [
       'Data Structures & Algorithms',
@@ -29,6 +29,18 @@ export const education: EducationItem[] = [
       'Computer Networks',
       'Database Management Systems',
       'Software Engineering',
+    ],
+  },
+  {
+    institution: 'Nathuram Sushila Devi Saraswati Vidhya Mandir Inter College, Ganj Dundwara, Kasganj',
+    degree: 'Class 10',
+    field: 'Secondary Education',
+    period: '2024',
+    status: 'completed',
+    details: [
+      'Mathematics',
+      'Science',
+      'Computer',
     ],
   },
 ];
