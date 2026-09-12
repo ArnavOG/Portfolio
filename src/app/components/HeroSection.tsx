@@ -59,19 +59,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <img
-        src="/assets/images/arnav.png"
-        alt="Arnav"
-        className="
-        absolute left-1/2 top-[27%]
-        -translate-x-1/2
-        z-10 h-[500px] w-auto object-contain
-        brightness-[0.45] contrast-[0.90] 
-        [mask-image:radial-gradient(ellipse_55%_52%_at_51%_50%,black_60%,transparent_100%)]
-        [-webkit-mask-image:radial-gradient(ellipse_48%_52%_at_50%_42%,black_60%,transparent_100%)]
-        "
-/>
-
+      
       {/* Monolith background text */}
 <div
   className="monolith-bg-text absolute top-1/2 left-1/2 text-foreground select-none pointer-events-none"
