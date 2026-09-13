@@ -32,7 +32,7 @@ export const projects: Project[] = [
 {
   slug: 'student-management-system',
   title: 'Student Management System',
-  category: 'College',
+  category: 'C#',
   status: 'active',
   featured: true,
   description: 'A console-based student management system built collaboratively in C# to practice object-oriented programming, file handling, and input validation.',
@@ -240,6 +240,72 @@ export const projects: Project[] = [
   'Mobile app for quick session logging'],
 
   year: '2024'
+},
+{
+  slug: 'college-management-system',
+  title: 'College Management System',
+  category: 'C#',
+  status: 'wip',
+  featured: false,
+  description: 'A menu-driven C# console application developed during an internship to simulate common college management operations.',
+  longDescription: 'This project was assigned during my internship under trainer guidance. It brings several college-related operations into one console application, including enquiry handling, student and employee registration, batch selection, fee management, attendance, certificate eligibility, and career guidance.',
+  tech: ['C#',
+        '.NET',
+        'Object-Oriented Programming',
+        'Console UI',
+        'Conditional Logic',
+        'Loops',
+        'Input Validation',
+        'Collections',],
+  github: 'https://github.com/ArnavOG/College-Management-System',
+  image: "/assets/ProjectScreenshots/CMS.png",
+  imageAlt: 'College Management System C# console application',
+  problem: 'College-related processes such as enquiries, registrations, batch selection, and fee management can become difficult to organize when handled separately.',
+  solution: 'Created a dashboard-driven console application that groups multiple college management operations into one structured system.',
+  features: [
+  'User account creation',
+    'Login authentication',
+    'College management dashboard',
+    'Enquiry form',
+    'Student registration',
+    'Employee registration',
+    'Java and C# batch plans',
+    'Fee checking and payment',
+    'Batch cancellation',
+    'Attendance marking and viewing',
+    'Certificate eligibility checking',
+    'Career guidance section',
+    'Profile summary',
+    'Input validation',],
+
+  challenges: [
+    'Organizing multiple modules inside one console application',
+    'Managing navigation through dashboard options',
+    'Connecting enquiry and registration workflows',
+    'Handling student and employee registration conditions',
+    'Managing batch fees and payment validation',
+    'Designing a clearer and more user-friendly console interface',],
+
+  learned: [
+    'Using classes and objects in C#',
+    'Creating methods to divide application functionality',
+    'Working with loops and conditional statements',
+    'Handling user input and validation',
+    'Using collections to store attendance records',
+    'Designing a menu-driven console application',
+    'Structuring a larger application into separate modules',],
+
+  future: [
+    'Add database storage',
+    'Separate models and business logic into different files',
+    'Add stronger authentication and password security',
+    'Support multiple student and employee accounts',
+    'Add persistent attendance and fee records',
+    'Improve certificate generation',
+    'Add role-based access',
+    'Create a graphical user interface in the future',],
+
+  year: '2026'
 },
 ];
 

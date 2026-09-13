@@ -6,7 +6,7 @@ export interface SkillGroup {
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'Languages',
+    category: 'Programming Languages',
     variant: 'primary',
     skills: ['C#', 'JavaScript', 'Java', 'HTML', 'CSS'],
   },
@@ -21,8 +21,23 @@ export const skillGroups: SkillGroup[] = [
     skills: ['.NET', 'MySQL', 'Relational Databases'],
   },
   {
-    category: 'Currently Learning',
+    category: 'Creative',
     variant: 'primary',
-    skills: ['Computer Networks', 'OS Internals', 'MVC'],
+    skills: ['Video Editing', 'Thumbnail Design', 'Prompt Engineering', 'Storytelling', 'AI-Assisted Image, Video & Music Generation' ],
+  },
+  {
+    category: 'Spoken Languages',
+    variant: 'accent',
+    skills: ['Hindi', 'English', 'Basic Japanese'],
+  },
+  {
+    category: 'Soft Skills',
+    variant: 'secondary',
+    skills: ['Leadership', 'Teamwork & Collaboration','Communication', 'Problem Solving', 'Logical Thinking', 'Project Coordination'],
+  },
+  { 
+    category: 'Currently Learning',
+    variant: 'default',
+    skills: ['Computer Networks', 'OS Internals', 'MVC', 'Japanese'],
   },
 ];
