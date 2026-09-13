@@ -1,3 +1,6 @@
+import MyPortfolioScreenshot from './ProjectScreenshots/MyPortfolioScreenshot.png';
+import type { StaticImageData } from 'next/image';
+
 export interface Project {
   slug: string;
   title: string;
@@ -9,7 +12,7 @@ export interface Project {
   tech: string[];
   github: string;
   live?: string;
-  image: string;
+  image: string | StaticImageData;
   imageAlt: string;
   problem: string;
   solution: string;
@@ -18,125 +21,188 @@ export interface Project {
   learned: string[];
   future: string[];
   year: string;
+  contributors?: {
+  name: string;
+  role: string;
+  github?: string;
+  }[];
 }
 
 export const projects: Project[] = [
 {
-  slug: 'nexus-chat',
-  title: 'Nexus Chat',
-  category: 'Software',
+  slug: 'student-management-system',
+  title: 'Student Management System',
+  category: 'College',
   status: 'active',
   featured: true,
-  description: 'A real-time peer-to-peer chat application with end-to-end encryption built in C# with .NET. Supports rooms, file transfers, and offline message queuing.',
-  longDescription: 'Nexus Chat started as an exploration into socket programming and grew into a full-featured desktop messaging app. The challenge was building reliable real-time communication without a central server — every message routes peer-to-peer with AES-256 encryption.',
-  tech: ['C#', '.NET', 'WPF', 'TCP Sockets', 'SQLite', 'AES-256'],
-  github: 'https://github.com',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1069e702b-1772175188279.png",
-  imageAlt: 'Dark chat interface with glowing blue message bubbles on a deep navy background',
-  problem: 'Most chat apps rely on centralized servers that log and potentially expose user messages. I wanted to build something where conversations stayed truly private.',
-  solution: 'Implemented a P2P architecture using TCP sockets where messages are encrypted on the sender\'s device before transmission. A lightweight relay service handles NAT traversal without storing message content.',
+  description: 'A console-based student management system built collaboratively in C# to practice object-oriented programming, file handling, and input validation.',
+  longDescription: 'This is a group project developed in C#. The aim is to create a simple system for managing student records through a console interface while applying object-oriented programming, file handling, validation, and teamwork.',
+  tech: [
+      'C#',
+      'Object-Oriented Programming',
+      'File Handling',
+      'Console UI',
+      'Input Validation',],
+  github: 'https://github.com/ArnavOG/StudentManagementSystem',
+  image: "/assets/ProjectScreenshots/SMS.jpeg",
+  imageAlt: 'Student Management System console application',
+  problem: 'Managing student records manually can become difficult when information increases and needs to be updated regularly.',
+  solution: 'We are developing a console-based application that allows student records to be managed in a more organized way using C#.',
   features: [
-  'End-to-end AES-256 encryption on all messages',
-  'Real-time file transfer with progress tracking',
-  'Persistent local message history via SQLite',
-  'Multi-room support with custom invite links',
-  'Offline message queuing — messages deliver when recipient reconnects'],
+      'Student record management',
+      'Console-based user interface',
+      'Input validation',
+      'File-based data storage',
+      'Object-oriented project structure',],
 
   challenges: [
-  'NAT traversal for direct P2P connections across different networks',
-  'Handling concurrent socket connections without blocking the UI thread',
-  'Ensuring message ordering when packets arrive out of sequence'],
+      'Dividing responsibilities between team members',
+      'Designing classes and their responsibilities',
+      'Handling invalid user input',
+      'Working with file-based data storage',],
 
   learned: [
-  'Deep understanding of TCP/IP socket programming in .NET',
-  'Cryptography fundamentals: key exchange, symmetric encryption',
-  'Async/await patterns and multi-threading in C#',
-  'WPF data binding and MVVM architecture'],
+      'Practical use of classes and objects in C#',
+      'Object-oriented programming concepts',
+      'File handling',
+      'Console application structure',
+      'Collaborative development with Git',],
 
   future: [
-  'Voice and video call support via WebRTC',
-  'Mobile client using .NET MAUI',
-  'Group encryption using ratchet protocol'],
+      'Improve the console interface',
+      'Add stronger validation',
+      'Refactor the code as new features are added',
+      'Explore a graphical user interface in the future',],
 
-  year: '2024'
+  contributors: [
+  {
+    name: 'Arnav',
+    role: 'Project Coordinator · Development',
+    github: 'https://github.com/ArnavOG',
+  },
+  {
+    name: 'Siddharth',
+    role: 'Console UI · Input Validation · Testing',
+    github: 'https://github.com/ItsSidPro',
+  },
+  {
+    name: 'Rituraj Shukla',
+    role: 'Functionality · Models · Related Exceptions',
+    github: 'https://github.com/KingOfSeason',
+  },
+  {
+    name: 'Raj Omre',
+    role: 'File Handling · File Save/Load',
+    github: 'https://github.com/Rajomre',
+  },
+],
+
+  year: '2026'
 },
 {
-  slug: 'pixel-forge',
-  title: 'PixelForge',
+  slug: 'personal-portfolio',
+  title: 'Personal Portfolio Website',
   category: 'Web',
   status: 'active',
   featured: true,
-  description: 'A browser-based pixel art editor with animation timeline, palette management, and one-click export to PNG/GIF. Built with vanilla TypeScript and Canvas API.',
-  longDescription: 'PixelForge was born from frustration with existing pixel art tools being either too complex or behind paywalls. I wanted a fast, zero-install editor that runs entirely in the browser.',
-  tech: ['TypeScript', 'Canvas API', 'CSS Grid', 'Web Workers', 'IndexedDB'],
-  github: 'https://github.com',
-  live: 'https://pixelforge.demo',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1ded73a1c-1772735370018.png",
-  imageAlt: 'Colorful pixel art grid on a dark editor interface with vibrant 8-bit style graphics',
-  problem: 'Pixel art tools are either desktop-only, subscription-based, or too bloated for quick sketches. There\'s a gap for a fast, free, browser-native editor.',
-  solution: 'Built a canvas-based editor using raw TypeScript with no frameworks. Used Web Workers for heavy operations like GIF encoding to keep the UI responsive.',
+  description: 'A personal portfolio website showcasing my development journey, projects, skills, education, and creative work.',
+  longDescription: 'This portfolio is being developed to present my work, learning journey, technical interests, and creative identity in one place. I am customizing the design, content, and structure so that the website reflects my own style instead of looking like a generic template.',
+  tech: ['React',
+        'TypeScript',
+        'Tailwind CSS',
+        'Next.js',
+        'Git',
+        'GitHub',],
+  github: 'https://github.com/ArnavOG/Portfolio',
+  live: '',
+  image: "/assets/ProjectScreenshots/MyPortfolioScreenshot.png",
+  imageAlt: 'Personal developer portfolio website',
+  problem: 'My projects, technical interests, creative work, and learning progress were not organized in one place.',
+  solution: 'I am building a personal portfolio website that brings my development work, education, journey, and creative interests together in one accessible place.',
   features: [
-  '32×32 to 128×128 canvas sizes',
-  'Animation timeline with onion-skinning',
-  'Custom palette builder with color history',
-  'Export to PNG, sprite sheet, and animated GIF',
-  'Auto-save to IndexedDB — no account required'],
+      'Personal introduction and vision',
+      'Project showcase',
+      'Skills and technologies section',
+      'Education and achievements',
+      'Development journey timeline',
+      'Creative work and creator identity',
+      'Contact section',],
 
   challenges: [
-  'Implementing undo/redo with efficient memory usage for large canvases',
-  'GIF encoding in JavaScript while keeping the UI thread unblocked',
-  'Touch support for tablet drawing with pressure sensitivity approximation'],
+      'Understanding and editing an existing React project',
+      'Customizing the design and layout',
+      'Organizing project and portfolio content',
+      'Making the website reflect my own identity',
+      'Preparing the website for deployment',],
 
   learned: [
-  'Deep dive into Canvas 2D API and pixel manipulation',
-  'Web Workers for offloading CPU-intensive tasks',
-  'IndexedDB for structured client-side storage',
-  'Performance profiling and paint optimization'],
+      'How a React project is structured',
+      'How reusable components display data',
+      'How to edit content-driven sections',
+      'Basic understanding of TypeScript interfaces',
+      'Using Git and GitHub while working on a project',],
 
   future: [
-  'Collaborative editing via WebSockets',
-  'Layer system with blend modes',
-  'Import from PNG for editing existing pixel art'],
+  'Complete the remaining sections',
+      'Improve responsive design',
+      'Deploy the website',
+      'Continue updating the portfolio as I build more projects',],
 
-  year: '2024'
+  year: '2026'
 },
 {
-  slug: 'algo-visualizer',
-  title: 'AlgoVisualizer',
-  category: 'Web',
+  slug: 'atm-simulator',
+  title: 'ATM Simulator',
+  category: 'College',
   status: 'active',
   featured: true,
-  description: 'Interactive visualization of 20+ sorting and pathfinding algorithms with step-by-step controls, speed adjustment, and complexity analysis.',
-  longDescription: 'AlgoVisualizer was built while studying DSA — I learn best by seeing things happen, so I built the tool I wished existed while studying.',
-  tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Vite'],
-  github: 'https://github.com',
-  live: 'https://algovis.demo',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1562af693-1772433144403.png",
-  imageAlt: 'Colorful bar chart visualization of sorting algorithm steps on a dark background with highlighted bars',
-  problem: 'Most algorithm visualizers are outdated, slow, or don\'t explain what\'s happening at each step. Learning DSA without visual context is unnecessarily hard.',
-  solution: 'Built a step-through visualization engine where each algorithm emits "frames" — snapshots of state — that can be played, paused, and scrubbed like a video.',
+  description: 'A console-based ATM simulation built in Java with PIN authentication, deposits, withdrawals, and balance checking.',
+  longDescription: 'The Java ATM Simulator recreates basic ATM operations through a command-line interface. Users can set a PIN, authenticate their account, check their balance, deposit money, withdraw money, and safely exit the application. The project is being improved with a cleaner and more user-friendly console interface.',
+  tech: ['Java',
+        'OOP Fundamentals',
+        'Console UI',
+        'Conditional Logic',
+        'Loops',
+        'Input Validation',],
+  github: 'https://github.com/ArnavOG/ATM-Simulator',
+  live: '',
+  image: "/assets/ProjectScreenshots/ATMScreenshot.png",
+  imageAlt: 'Java ATM Simulator console application',
+  problem: 'asic console-based banking programs can feel difficult to use when their menus, prompts, and transaction messages are not clearly organized.',
+  solution: 'Created a Java ATM simulator with PIN verification, a structured transaction menu, balance management, and clearer console messages.',
   features: [
-  '20+ algorithms: bubble, merge, quick, heap, Dijkstra, A*, BFS, DFS',
-  'Step-by-step controls with speed adjustment',
-  'Complexity panel showing O(n) analysis per algorithm',
-  'Randomize, custom input, and comparison mode',
-  'Mobile-responsive with touch controls'],
+    'PIN setup and authentication',
+    'Three-attempt PIN verification',
+    'Withdraw money',
+    'Deposit money',
+    'Check account balance',
+    'Insufficient balance validation',
+    'Invalid amount validation',
+    'Structured console menu',
+    'Clear transaction feedback',],
 
   challenges: [
-  'Decoupling algorithm logic from rendering to keep visualizations framework-agnostic',
-  'Smooth animations for array swaps without layout thrashing'],
+    'Designing a readable console interface',
+    'Managing user input through Scanner',
+    'Handling incorrect PIN attempts',
+    'Validating deposit and withdrawal amounts',
+    'Maintaining the account balance across transactions',],
 
   learned: [
-  'Deep understanding of sorting and graph algorithms',
-  'React performance optimization with useMemo and useCallback',
-  'Animation sequencing with Framer Motion'],
+    'Using methods to organize Java programs',
+    'Working with loops and conditional statements',
+    'Handling user input with Scanner',
+    'Applying basic validation to transactions',
+    'Designing a more readable command-line interface',],
 
   future: [
-  'Tree visualizations: AVL, Red-Black',
-  'User-submitted algorithms via sandboxed eval',
-  'Dark/light theme toggle'],
+    'Add transaction history',
+    'Support multiple user accounts',
+    'Add account creation and login',
+    'Improve the console design further',
+    'Explore a graphical user interface in the future',],
 
-  year: '2023'
+  year: '2025'
 },
 {
   slug: 'study-sync',
@@ -175,55 +241,7 @@ export const projects: Project[] = [
 
   year: '2024'
 },
-{
-  slug: 'cli-toolkit',
-  title: 'CLI Toolkit',
-  category: 'Software',
-  status: 'active',
-  featured: false,
-  description: 'A personal collection of CLI tools: file organizer, batch renamer, git workflow shortcuts, and a dev environment bootstrapper. Built in Python.',
-  longDescription: 'A growing collection of command-line utilities I use daily. Started with a file organizer, expanded into a full toolkit.',
-  tech: ['Python', 'Click', 'Rich', 'subprocess', 'argparse'],
-  github: 'https://github.com',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_18e746b1b-1772511364607.png",
-  imageAlt: 'Dark terminal screen with green text and command line interface showing file operations',
-  problem: 'Repetitive dev tasks eating time every day.',
-  solution: 'Built a modular CLI toolkit using Python Click framework with Rich for terminal UI.',
-  features: [
-  'File organizer by extension/date',
-  'Batch file renamer with regex support',
-  'Git workflow shortcuts',
-  'Dev environment bootstrapper'],
-
-  challenges: ['Cross-platform compatibility between Windows and macOS'],
-  learned: ['Click framework architecture', 'Rich library for terminal UIs', 'Cross-platform Python scripting'],
-  future: ['Package on PyPI', 'Plugin system for community contributions'],
-  year: '2024'
-},
-{
-  slug: 'neural-sketch',
-  title: 'NeuralSketch',
-  category: 'AI',
-  status: 'wip',
-  featured: false,
-  description: 'Experimenting with stable diffusion for sketch-to-image generation. Upload a rough sketch, get a refined artwork. Early-stage exploration.',
-  longDescription: 'NeuralSketch is an ongoing experiment with image-to-image generation using ControlNet + Stable Diffusion.',
-  tech: ['Python', 'Stable Diffusion', 'ControlNet', 'FastAPI', 'React'],
-  github: 'https://github.com',
-  image: "https://img.rocket.new/generatedImages/rocket_gen_img_13f77e0fe-1772815067249.png",
-  imageAlt: 'Abstract neural network visualization with glowing purple nodes and connections on dark background',
-  problem: 'Rough sketches have ideas but lack visual polish. AI can bridge the gap.',
-  solution: 'ControlNet conditioning on sketch edges to guide stable diffusion image generation.',
-  features: [
-  'Sketch upload and edge detection preprocessing',
-  'Multiple style prompts',
-  'Side-by-side comparison view'],
-
-  challenges: ['Inference speed on consumer hardware', 'Prompt engineering for consistent results'],
-  learned: ['Diffusion model architecture fundamentals', 'ControlNet conditioning', 'FastAPI async endpoints'],
-  future: ['Real-time sketch-to-image with optimized inference', 'Style transfer presets'],
-  year: '2025'
-}];
+];
 
 
 export const experiments = [
@@ -236,14 +254,7 @@ export const experiments = [
   live: 'https://codepen.io',
   year: '2024'
 },
-{
-  slug: 'terminal-portfolio',
-  title: 'terminal_v1.html',
-  description: 'First portfolio attempt: a fully interactive terminal emulator in the browser. Type commands to navigate. Deprecated, kept for nostalgia.',
-  tech: ['HTML', 'CSS', 'Vanilla JS'],
-  github: 'https://github.com',
-  year: '2023'
-},
+
 {
   slug: 'css-art',
   title: 'css_art_collection',

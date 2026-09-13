@@ -2,9 +2,10 @@
 
 import React, { useState, useCallback, useMemo, memo } from 'react';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 
 interface AppImageProps {
-    src: string;
+    src: string | StaticImageData;
     alt: string;
     width?: number;
     height?: number;

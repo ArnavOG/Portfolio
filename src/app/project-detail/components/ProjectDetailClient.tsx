@@ -218,6 +218,43 @@ export default function ProjectDetailClient({
           </ul>
         </section>
 
+        {/* Built With Friends */}
+        {project.contributors && project.contributors.length > 0 && (
+        <section className="reveal space-y-5">
+        <p className="section-label">Built With Friends</p>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+        {project.contributors.map((contributor) => (
+        <div
+          key={contributor.name}
+          className="card-glass rounded-xl p-5 border border-border space-y-3"
+        >
+            <div>
+            <h3 className="text-base font-bold text-foreground">
+              {contributor.name}
+            </h3>
+
+            <p className="text-sm text-muted-foreground leading-relaxed">
+              {contributor.role}
+            </p>
+          </div>
+
+          {contributor.github && (
+            <a
+              href={contributor.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary hover:underline"
+            >
+              GitHub ↗
+            </a>
+          )}
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
         {/* Footer CTA — prev/next + view all */}
         <section className="reveal pt-8 border-t border-border space-y-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
