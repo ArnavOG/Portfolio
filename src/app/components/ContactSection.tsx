@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -24,10 +25,29 @@ export default function ContactSection() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    await emailjs.send(
+      "arnav_contact",
+      "template_07o6xsn",
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      {
+        publicKey: "lTr7_K-qumxIPza7s",
+      }
+    );
+
     setSubmitted(true);
-  };
+  } catch (error) {
+    console.error("Failed to send message:", error);
+    alert("Something went wrong. Please try again.");
+  }
+};
 
   const inputClass =
     'w-full bg-transparent border-b border-border py-4 text-sm text-foreground placeholder:text-muted-foreground/40 focus:outline-none focus:border-primary transition-all duration-300 font-sans';
@@ -57,16 +77,19 @@ export default function ContactSection() {
                   href="mailto:arnav@example.com"
                   className="text-xl font-bold text-foreground hover:text-primary transition-colors duration-200"
                 >
-                  arnav@example.com
+                  arnavbusinessfile@gmail.com
                 </a>
               </div>
               <div>
                 <p className="font-mono-code text-xs text-muted-foreground tracking-widest uppercase mb-2">Socials</p>
                 <div className="flex gap-6">
                   {[
-                    { label: 'GitHub', href: 'https://github.com' },
-                    { label: 'LinkedIn', href: 'https://linkedin.com' },
-                    { label: 'YouTube', href: 'https://youtube.com' },
+                    { label: 'GitHub', href: 'https://github.com/ArnavOG' },
+                    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/arnavin' },
+                    { label: 'YouTube', href: 'https://www.youtube.com/@ArnavoltZ' },
+                    { label: 'Instagram', href: 'https://www.instagram.com/arnavoltz' },
+                    { label: 'Twitter (X)', href: 'https://x.com/ArnavoltZOG' },
+                    { label: 'Pinterest', href: 'https://pinterest.com/arnavoltz' },
                   ].map((s) => (
                     <a
                       key={s.label}
@@ -82,7 +105,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <a
-                  href="/resume"
+                  href="/assets/resume.pdf"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/10 transition-all duration-200"
                 >
                   Download Resume ↓

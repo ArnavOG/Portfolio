@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="flex items-center gap-2.5">
               <AppLogo size={24} />
               <span className="font-sans font-bold text-sm tracking-tight text-foreground">
-                arnav<span className="text-primary">.</span>
+                Arnav<span className="text-primary">.</span>
               </span>
             </div>
             <p className="font-mono-code text-xs text-muted-foreground">
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="flex flex-col items-start md:items-end gap-3">
             <div className="flex items-center gap-5">
               <a
-                href="https://github.com"
+                href="https://github.com/ArnavOG"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-mono-code text-muted-foreground hover:text-foreground transition-colors"
@@ -50,7 +50,7 @@ export default function Footer() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/arnavin"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-mono-code text-muted-foreground hover:text-foreground transition-colors"
@@ -58,7 +58,7 @@ export default function Footer() {
                 LinkedIn
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@ArnavoltZ"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs font-mono-code text-muted-foreground hover:text-foreground transition-colors"
