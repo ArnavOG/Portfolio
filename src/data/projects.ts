@@ -205,41 +205,83 @@ export const projects: Project[] = [
   year: '2025'
 },
 {
-  slug: 'study-sync',
-  title: 'StudySync',
-  category: 'College',
-  status: 'wip',
+  slug: 'pulse-shift',
+  title: 'Pulse Shift',
+  category: 'Web',
+  status: 'active',
   featured: true,
-  description: 'A collaborative study platform for college students — shared notes, Pomodoro timers, progress tracking, and resource sharing built for the campus community.',
-  longDescription: 'StudySync emerged from a real problem: our college had no central platform for sharing study materials. WhatsApp groups were chaotic, Google Drive was unorganized. I built something purpose-built for students.',
-  tech: ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Vercel'],
-  github: 'https://github.com',
-  image: "https://images.unsplash.com/photo-1699287648687-dcbaf56e2160",
-  imageAlt: 'Clean study dashboard with warm lighting, notebook and laptop on a wooden desk',
-  problem: 'College students at our campus had no structured way to share notes, coordinate study sessions, or track collective progress across subjects.',
-  solution: 'Built a shared workspace with subject-organized notes, integrated Pomodoro timers, and a resource library. Authentication via college email ensures the community stays relevant.',
+
+  description:
+    'A browser-based dimensional survival game built with HTML, CSS, JavaScript, and Canvas.',
+
+  longDescription:
+    'Pulse Shift is a dimensional survival game where players move through an arena, switch between the Pulse and Void dimensions, and avoid incoming hazards for as long as possible. I built it to practice JavaScript game logic, Canvas rendering, responsive design, and interactive user controls.',
+
+  tech: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'HTML5 Canvas',
+    'Git',
+    'GitHub',
+  ],
+
+  github: 'https://github.com/ArnavOG/Pulse-Shift',
+
+  live: 'https://arnavog.github.io/Pulse-Shift/',
+
+  image: '/assets/ProjectScreenshots/psScreenshot.png',
+
+  imageAlt: 'Pulse Shift dimensional survival game',
+
+  problem:
+    'I wanted to build an interactive browser game that combined simple survival mechanics with a futuristic visual design.',
+
+  solution:
+    'I developed Pulse Shift using JavaScript and the Canvas API, adding movement, dimension switching, incoming hazards, score tracking, and responsive controls for desktop and mobile devices.',
+
   features: [
-  'Subject-organized shared notes with markdown support',
-  'Integrated Pomodoro timer with session history',
-  'Resource library with file upload and tagging',
-  'Study group creation with invite links',
-  'Progress dashboard showing weekly study hours'],
+    'Pulse and Void dimensions',
+    'Dimension switching mechanic',
+    'Canvas-based gameplay',
+    'Moving obstacles and hazards',
+    'WASD and Arrow key controls',
+    'Spacebar dimension switching',
+    'Mobile joystick controls',
+    'Mobile SHIFT button',
+    'Score and best-score tracking',
+    'Responsive game interface',
+  ],
 
   challenges: [
-  'Real-time collaborative editing without conflicts',
-  'File storage and access control per study group'],
+    'Creating smooth player movement',
+    'Managing game states and overlays',
+    'Designing the dimension-switching mechanic',
+    'Rendering gameplay through Canvas',
+    'Making controls responsive for mobile devices',
+    'Balancing the difficulty of incoming hazards',
+  ],
 
   learned: [
-  'Full-stack development with Next.js App Router',
-  'Database design and row-level security in Supabase',
-  'Building for real users with real feedback loops'],
+    'Using JavaScript for game logic',
+    'Working with the HTML5 Canvas API',
+    'Handling keyboard and touch input',
+    'Managing animation and game loops',
+    'Creating responsive layouts with CSS',
+    'Organizing and deploying a web project',
+    'Using Git and GitHub for version control',
+  ],
 
   future: [
-  'AI-powered note summarization',
-  'Integration with college timetable APIs',
-  'Mobile app for quick session logging'],
+    'Add more dimensions',
+    'Introduce new obstacle types',
+    'Add sound effects and background music',
+    'Create power-ups and special abilities',
+    'Improve animations and visual effects',
+    'Add an online leaderboard',
+  ],
 
-  year: '2024'
+  year: '2026',
 },
 {
   slug: 'college-management-system',
@@ -312,21 +354,16 @@ export const projects: Project[] = [
 
 export const experiments = [
 {
-  slug: 'noise-field',
-  title: 'noise_field.js',
-  description: 'Perlin noise flow field visualization. 10,000 particles following a noise vector field. Pure canvas, no libraries.',
-  tech: ['JavaScript', 'Canvas API', 'Perlin Noise'],
-  github: 'https://github.com',
-  live: 'https://codepen.io',
-  year: '2024'
-},
-
-{
-  slug: 'css-art',
-  title: 'css_art_collection',
-  description: 'Pure CSS art experiments — no images, no SVGs, just divs and gradients. Includes a CSS-only Minecraft creeper.',
-  tech: ['HTML', 'CSS'],
-  github: 'https://github.com',
-  live: 'https://codepen.io',
-  year: '2023'
-}];
+  slug: 'matrix-terminal-effect',
+  title: 'Matrix Terminal Effect',
+  description: 'A Java console experiment that recreates a Matrix-inspired animated terminal effect.',
+  tech: ['Java',
+        'Randomization',
+        'Loops',
+        'StringBuilder',
+        'Console Output',
+        'Thread.sleep()',],
+  github: 'https://github.com/ArnavOG/Matrix-Terminal-Effect',
+  live: '',
+  year: '2025'
+},];
