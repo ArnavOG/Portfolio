@@ -36,25 +36,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Build portfolio
-        run: |
-          npm run build
-
-          python3 - <<'PY'
-          from pathlib import Path
-
-          output_folder = Path("out")
-
-          for file in output_folder.rglob("*"):
-              if file.is_file() and file.suffix.lower() in [".html", ".css", ".js"]:
-                  content = file.read_text(encoding="utf-8")
-
-                  content = content.replace('src="/', 'src="/Portfolio/')
-                  content = content.replace('href="/', 'href="/Portfolio/')
-                  content = content.replace('url("/', 'url("/Portfolio/')
-                  content = content.replace("url('/", "url('/Portfolio/")
-
-                  file.write_text(content, encoding="utf-8")
-          PY
+        run: npm run build
 
       - name: Upload Next.js output
         uses: actions/upload-pages-artifact@v3
