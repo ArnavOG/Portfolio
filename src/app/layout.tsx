@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   description:
     'Arnav is a Computer Science student and software developer building real projects, learning in public, and working toward founding something meaningful.',
   icons: {
-    icon: [{ url: '/favicon.ico', type: 'image/x-icon' }],
+    icon: [{ url: '/Portfolio/favicon.ico', type: 'image/x-icon' }],
   },
 };
 

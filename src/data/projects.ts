@@ -44,7 +44,7 @@ export const projects: Project[] = [
       'Console UI',
       'Input Validation',],
   github: 'https://github.com/ArnavOG/StudentManagementSystem',
-  image: "Portfolio/assets/ProjectScreenshots/SMS.png",
+  image: "/Portfolio/assets/ProjectScreenshots/SMS.png",
   imageAlt: 'Student Management System console application',
   problem: 'Managing student records manually can become difficult when information increases and needs to be updated regularly.',
   solution: 'We are developing a console-based application that allows student records to be managed in a more organized way using C#.',
