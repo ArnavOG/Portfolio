@@ -30,12 +30,15 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Build portfolio
         run: npm run build
 
-      - name: Upload website
+      - name: Upload Next.js output
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
@@ -49,6 +52,6 @@ jobs:
     needs: build
 
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy portfolio
         id: deployment
         uses: actions/deploy-pages@v4
