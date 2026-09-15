@@ -8,6 +8,8 @@ const nextConfig = {
   basePath: '/Portfolio',
   assetPrefix: '/Portfolio/',
 
+  trailingSlash: true,
+
   productionBrowserSourceMaps: true,
 
   distDir: process.env.DIST_DIR || '.next',
@@ -27,12 +29,7 @@ const nextConfig = {
     qualities: [75, 85, 100],
   },
 
-  webpack(
-    config,
-    {
-      dev,
-    }
-  ) {
+  webpack(config, { dev }) {
     if (dev) {
       config.module.rules.push({
         test: /\.(jsx|tsx)$/,

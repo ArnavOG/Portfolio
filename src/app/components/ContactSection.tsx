@@ -105,7 +105,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <a
-                  href="/assets/resume.pdf"
+                  href="/Portfolio/public/assets/resume.pdf"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-primary/30 text-primary text-sm font-semibold hover:bg-primary/10 transition-all duration-200"
                 >
                   Download Resume ↓
