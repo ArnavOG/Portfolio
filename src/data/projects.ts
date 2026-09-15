@@ -44,7 +44,7 @@ export const projects: Project[] = [
       'Console UI',
       'Input Validation',],
   github: 'https://github.com/ArnavOG/StudentManagementSystem',
-  image: "Portfolio/public/assets/ProjectScreenshots/SMS.png",
+  image: "Portfolio/assets/ProjectScreenshots/SMS.png",
   imageAlt: 'Student Management System console application',
   problem: 'Managing student records manually can become difficult when information increases and needs to be updated regularly.',
   solution: 'We are developing a console-based application that allows student records to be managed in a more organized way using C#.',
@@ -115,7 +115,7 @@ export const projects: Project[] = [
         'GitHub',],
   github: 'https://github.com/ArnavOG/Portfolio',
   live: '',
-  image: "/Portfolio/public/assets/ProjectScreenshots/MyPortfolioScreenshot.png",
+  image: "/Portfolio/assets/ProjectScreenshots/MyPortfolioScreenshot.png",
   imageAlt: 'Personal developer portfolio website',
   problem: 'My projects, technical interests, creative work, and learning progress were not organized in one place.',
   solution: 'I am building a personal portfolio website that brings my development work, education, journey, and creative interests together in one accessible place.',
@@ -166,7 +166,7 @@ export const projects: Project[] = [
         'Input Validation',],
   github: 'https://github.com/ArnavOG/ATM-Simulator',
   live: '',
-  image: "/Portfolio/public/assets/ProjectScreenshots/ATMScreenshot.png",
+  image: "/Portfolio/assets/ProjectScreenshots/ATMScreenshot.png",
   imageAlt: 'Java ATM Simulator console application',
   problem: 'asic console-based banking programs can feel difficult to use when their menus, prompts, and transaction messages are not clearly organized.',
   solution: 'Created a Java ATM simulator with PIN verification, a structured transaction menu, balance management, and clearer console messages.',
@@ -230,7 +230,7 @@ export const projects: Project[] = [
 
   live: 'https://arnavog.github.io/Pulse-Shift/',
 
-  image: '/Portfolio/public/assets/ProjectScreenshots/psScreenshot.png',
+  image: '/Portfolio/assets/ProjectScreenshots/psScreenshot.png',
 
   imageAlt: 'Pulse Shift dimensional survival game',
 
@@ -300,7 +300,7 @@ export const projects: Project[] = [
         'Input Validation',
         'Collections',],
   github: 'https://github.com/ArnavOG/College-Management-System',
-  image: "/Portfolio/public/assets/ProjectScreenshots/CMS.png",
+  image: "/Portfolio/assets/ProjectScreenshots/CMS.png",
   imageAlt: 'College Management System C# console application',
   problem: 'College-related processes such as enquiries, registrations, batch selection, and fee management can become difficult to organize when handled separately.',
   solution: 'Created a dashboard-driven console application that groups multiple college management operations into one structured system.',
