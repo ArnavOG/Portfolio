@@ -1,12 +1,16 @@
-import { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 import { projects } from '@/data/projects';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+export const dynamic = 'force-static';
 
-  const projectRoutes = projects.map((p) => ({
-    url: `${baseUrl}/project-detail?slug=${p.slug}`,
-    lastModified: new Date(),
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    'https://ArnavOG.github.io/Portfolio';
+
+  const projectRoutes = projects.map((project) => ({
+    url: `${baseUrl}/project-detail?slug=${project.slug}`,
+    lastModified: '2026-09-15',
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
@@ -14,19 +18,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: '2026-09-15',
       changeFrequency: 'weekly',
       priority: 1.0,
     },
     {
       url: `${baseUrl}/work`,
-      lastModified: new Date(),
+      lastModified: '2026-09-15',
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/project-detail`,
-      lastModified: new Date(),
+      lastModified: '2026-09-15',
       changeFrequency: 'monthly',
       priority: 0.7,
     },
