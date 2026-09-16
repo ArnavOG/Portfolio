@@ -1,93 +1,183 @@
-# Portfolio
-My personal developer portfolio — showcasing my projects, skills, learning journey, and work as a Computer Science student and creator.
+# Arnav — Developer Portfolio
 
+My personal developer portfolio showcasing my projects, technical skills, learning journey, and creative work as a Computer Science student and creator.
 
-# Next.js
+The website is designed to bring together my development experience, academic background, selected projects, and ongoing interests in software development, web technologies, and digital creativity.
 
-A modern Next.js 15 application built with TypeScript and Tailwind CSS.
+## Overview
 
-## 🚀 Features
+This portfolio is an ongoing project that reflects my progress as I learn, build, and experiment with different technologies.
 
-- **Next.js 15** - Latest version with improved performance and features
-- **React 19** - Latest React version with enhanced capabilities
-- **Tailwind CSS** - Utility-first CSS framework for rapid UI development
+It serves as a central place to:
 
-## 🛠️ Installation
+* Present selected development projects
+* Document my technical learning journey
+* Showcase skills and areas of interest
+* Highlight academic background and experience
+* Share creative work and future projects
+* Provide access to relevant professional links
 
-1. Install dependencies:
-  ```bash
-  npm install
-  # or
-  yarn install
-  ```
+## Features
 
-2. Start the development server:
-  ```bash
-  npm run dev
-  # or
-  yarn dev
-  ```
-3. Open [http://localhost:4028](http://localhost:4028) with your browser to see the result.
+* Responsive portfolio layout
+* Project showcase with detailed project information
+* Skills and technology overview
+* Education and learning timeline
+* Creative work and personal interests section
+* Reusable project detail structure
+* Static deployment support
+* Mobile-friendly design
 
-## 📁 Project Structure
+## Technology Stack
 
-```
-nextjs/
-├── public/             # Static assets
+* **Framework:** Next.js 15
+* **Language:** TypeScript
+* **Frontend:** React 19
+* **Styling:** Tailwind CSS
+* **Build Tooling:** PostCSS
+* **Version Control:** Git
+* **Repository Hosting:** GitHub
+* **Deployment:** GitHub Pages
+
+## Project Structure
+
+```text
+Portfolio/
+├── public/                 # Static assets and public files
 ├── src/
-│   ├── app/            # App router components
-│   │   ├── layout.tsx  # Root layout component
-│   │   └── page.tsx    # Main page component
-│   ├── components/     # Reusable UI components
-│   ├── styles/         # Global styles and Tailwind configuration
-├── next.config.mjs     # Next.js configuration
-├── package.json        # Project dependencies and scripts
-├── postcss.config.js   # PostCSS configuration
-└── tailwind.config.js  # Tailwind CSS configuration
-
+│   ├── app/                # Next.js App Router files
+│   │   ├── layout.tsx      # Root layout
+│   │   └── page.tsx       # Main portfolio page
+│   ├── components/         # Reusable UI components
+│   └── styles/             # Global styles
+├── .github/
+│   └── workflows/          # GitHub Actions workflows
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Project metadata and dependencies
+├── postcss.config.js       # PostCSS configuration
+└── tailwind.config.js      # Tailwind CSS configuration
 ```
 
-## 🧩 Page Editing
+## Getting Started
 
-You can start editing the page by modifying `src/app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-## 🎨 Styling
+Make sure the following tools are installed:
 
-This project uses Tailwind CSS for styling with the following features:
-- Utility-first approach for rapid development
-- Custom theme configuration
-- Responsive design utilities
-- PostCSS and Autoprefixer integration
+* Node.js
+* npm
+* Git
 
-## 📦 Available Scripts
+### Installation
 
-- `npm run dev` - Start development server on port 4028
-- `npm run build` - Build the application for production
-- `npm run start` - Start the development server
-- `npm run serve` - Start the production server
-- `npm run lint` - Run ESLint to check code quality
-- `npm run lint:fix` - Fix ESLint issues automatically
-- `npm run format` - Format code with Prettier
+Clone the repository:
 
-## 📱 Deployment
+```bash
+git clone https://github.com/ArnavOG/Portfolio.git
+```
 
-Build the application for production:
+Move into the project directory:
 
-  ```bash
-  npm run build
-  ```
+```bash
+cd Portfolio
+```
 
-## 📚 Learn More
+Install the dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial
+### Development
 
-You can check out the [Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start the local development server:
 
-## 🙏 Acknowledgments
+```bash
+npm run dev
+```
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by Next.js and React
-- Styled with Tailwind CSS
+Open the local development URL shown in the terminal.
+
+The application will automatically update when supported source files are modified.
+
+## Available Scripts
+
+| Command            | Description                         |
+| ------------------ | ----------------------------------- |
+| `npm run dev`      | Starts the development server       |
+| `npm run build`    | Creates a production build          |
+| `npm run start`    | Starts the production server        |
+| `npm run serve`    | Serves the production build         |
+| `npm run lint`     | Runs ESLint                         |
+| `npm run lint:fix` | Fixes applicable ESLint issues      |
+| `npm run format`   | Formats project files with Prettier |
+
+## Deployment
+
+The portfolio is configured for static deployment using Next.js and GitHub Pages.
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The generated static output can then be deployed through the configured GitHub Actions workflow.
+
+## Customization
+
+The main portfolio content can be updated through the files inside:
+
+```text
+src/app/
+src/components/
+public/
+```
+
+Typical updates include:
+
+* Personal introduction
+* Project descriptions
+* Skills and technologies
+* Education details
+* Timeline entries
+* Images and other static assets
+* Resume and external links
+
+## Credits
+
+### Development
+
+Designed and customized by **Arnav Kumar**.
+
+### Initial Project Generation
+
+The initial project structure was generated with assistance from [Rocket.new](https://rocket.new) and subsequently customized and developed further.
+
+### Technologies and Resources
+
+This project uses and is supported by the following technologies and resources:
+
+* [Next.js](https://nextjs.org/)
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [GitHub](https://github.com/)
+* [GitHub Pages](https://pages.github.com/)
+
+## License
+
+Copyright © 2026 Arnav Kumar.
+
+This repository is made available for viewing and educational reference. Unless otherwise stated, the source code, design, written content, images, branding, and other original materials in this project may not be copied, modified, redistributed, or used commercially without prior permission.
+
+Third-party libraries, frameworks, and resources remain subject to their respective licenses.
+
+For permission requests, please contact the repository owner through [GitHub](https://github.com/ArnavOG).
+
+## Author
+
+**Arnav Kumar**
+
+* GitHub: [@ArnavOG](https://github.com/ArnavOG)
+* Portfolio: [Arnav's Portfolio](https://arnavog.github.io/Portfolio)
